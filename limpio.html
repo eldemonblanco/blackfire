@@ -4,73 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ExtinSafe Bogotá | Recarga y Mantenimiento de Extintores</title>
-  <meta name="description" content="Servicio profesional de recarga, inspección y mantenimiento de extintores en Bogotá. Cumplimos normativa colombiana NTC 2885 y NFPA 10. Atención rápida a empresas y hogares.">
+  <meta name="description" content="Servicio profesional de recarga, inspección y mantenimiento de extintores en Bogotá. Cumplimos normativa NTC 2885 y NFPA 10.">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #f5f7fa;
       color: #333;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(rgba(177, 18, 38, 0.8), rgba(177, 18, 38, 0.8)), url('https://media.istockphoto.com/id/1188112158/photo/panoramic-view-of-bogota-colombia.jpg?s=612x612&w=0&k=20&c=B2j03z0wON-vo-f2Jlgvd__MsG9Aso7KPF2XraLwbJs=') center/cover no-repeat;
+      background: linear-gradient(rgba(177,18,38,0.85), rgba(177,18,38,0.85)), url('https://media.istockphoto.com/id/1146782734/photo/panoramic-aerial-view-of-downtown-bogota-colombia-a.jpg?s=612x612&w=0&k=20&c=-897flbpawUeDE_MtOPSDqRTmQ0A1A8VwzeIiAE1gtY=') center/cover no-repeat;
       color: #fff;
-      padding: 100px 20px;
+      padding: 120px 20px 80px;
       text-align: center;
     }
     header h1 {
+      font-size: 2.8rem;
       margin: 0;
-      font-size: 3rem;
     }
     header p {
-      font-size: 1.3rem;
-      max-width: 800px;
+      font-size: 1.2rem;
+      max-width: 90%;
       margin: 20px auto;
     }
     .cta-button {
       display: inline-block;
       background: #25D366;
       color: #fff;
-      padding: 15px 30px;
+      padding: 16px 32px;
       border-radius: 50px;
       text-decoration: none;
-      font-size: 1.2rem;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: 0.3s;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
-    .cta-button:hover {
-      background: #128C7E;
-      transform: scale(1.05);
-    }
+    .cta-button i { margin-right: 10px; }
     section {
-      padding: 60px 20px;
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
     h2 {
       color: #b11226;
       text-align: center;
-      margin-bottom: 40px;
-      font-size: 2.2rem;
+      font-size: 2rem;
+      margin-bottom: 30px;
     }
-    .about img, .services-grid img {
+    img {
       width: 100%;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    @media (min-width: 768px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      header h1 { font-size: 3.5rem; }
+    }
+    @media (min-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(3, 1fr); }
     }
     .service-card {
       background: #fff;
-      padding: 20px;
+      padding: 25px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       text-align: center;
@@ -82,43 +85,56 @@
     }
     .contact-box {
       background: #fff;
-      padding: 40px;
+      padding: 40px 20px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       text-align: center;
     }
-    .contact-box p {
-      font-size: 1.1rem;
-    }
-    form {
-      max-width: 600px;
-      margin: 30px auto 0;
-    }
-    input, textarea {
+    .contact-box p { font-size: 1.1rem; margin: 15px 0; }
+    form input, form textarea {
       width: 100%;
       padding: 15px;
-      margin-bottom: 15px;
+      margin: 10px 0;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 8px;
+      font-size: 1rem;
     }
-    button {
+    form button {
       background: #b11226;
       color: #fff;
       padding: 15px 30px;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      font-size: 1.2rem;
       cursor: pointer;
-      font-size: 1.1rem;
+      width: 100%;
     }
     footer {
       background: #1f1f1f;
       color: #ccc;
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
+      font-size: 0.9rem;
     }
-    @media (max-width: 768px) {
-      header h1 { font-size: 2.5rem; }
-      header { padding: 80px 20px; }
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+    @media (min-width: 768px) {
+      .whatsapp-fixed { display: none; }
     }
   </style>
 </head>
@@ -126,92 +142,86 @@
 
 <header>
   <h1>ExtinSafe Bogotá</h1>
-  <p>Recarga, inspección y mantenimiento profesional de extintores contra incendios en Bogotá y alrededores. Servicio confiable y cumplimiento normativo garantizado.</p>
-  <a href="https://wa.me/[[Tu número real sin espacios ni +]]" class="cta-button"><i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp</a>
+  <p>Recarga, inspección y mantenimiento profesional de extintores en Bogotá y alrededores</p>
+  <a href="https://wa.me/[[Tu número real sin + ni espacios]]" class="cta-button"><i class="fab fa-whatsapp"></i> Contáctanos ya</a>
 </header>
 
-<section class="about">
+<section>
   <h2>¿Quiénes Somos?</h2>
-  <img src="https://www.recargadeextintoresbogota.com/assets/media/159014.jpg" alt="Extintores en mantenimiento profesional en Bogotá">
-  <p><strong>ExtinSafe Bogotá</strong> es un servicio técnico especializado en la recarga, inspección y mantenimiento de extintores contra incendio.</p>
-  <p>Nuestro objetivo es ayudar a empresas, comercios y hogares a cumplir con la normativa vigente en Colombia, brindando un servicio responsable, transparente y confiable.</p>
+  <img src="https://blog.koorsen.com/hs-fs/hubfs/Blogs/Products%20and%20Services/Fire%20Extinguisher/Fire%20Extinguisher%20Images/FE%20Service%20Department%20Indy%20-%20Bob%20Havlin/Fire%20Extinguisher%20Shop%20Bob%20Havlin.jpg?width=600&name=Fire%20Extinguisher%20Shop%20Bob%20Havlin.jpg" alt="Técnico profesional realizando mantenimiento de extintores">
+  <p><strong>ExtinSafe Bogotá</strong> es un servicio técnico especializado en recarga, inspección y mantenimiento de extintores contra incendios.</p>
+  <p>Ayudamos a empresas, comercios y hogares a cumplir la normativa colombiana con un servicio responsable y confiable.</p>
 </section>
 
 <section class="services">
   <h2>Nuestros Servicios</h2>
-  <img src="https://profuego.es/wp-content/uploads/2024/02/tipos-de-extintores-y-sus-usos-v2-scaled.webp" alt="Tipos de extintores: ABC, CO2 y PQS">
+  <img src="https://surreyfire.co.uk/wp-content/uploads/2018/03/fire-extinguisher-colours-image-of-all-of-the-different-types-of-extinguisher-and-their-associated-colours.jpg" alt="Tipos de extintores: ABC, CO2 y polvo químico seco">
   
   <div class="services-grid">
     <div class="service-card">
       <i class="fas fa-fill-drip"></i>
-      <h3>Recarga de Extintores</h3>
-      <p>ABC, CO₂ y PQS</p>
-      <img src="https://extintoresfarfan.com/wp-content/uploads/2024/06/DSC_1775-scaled.jpg" alt="Técnico recargando extintor">
+      <h3>Recarga</h3>
+      <p>Extintores ABC, CO₂ y PQS</p>
     </div>
     <div class="service-card">
       <i class="fas fa-tools"></i>
       <h3>Inspección y Mantenimiento</h3>
       <p>Preventivo y correctivo</p>
-      <img src="https://www.fleximecan.com/wp-content/uploads/2025/05/La-recarga-de-extintores-y-su-mantenimiento.jpg" alt="Mantenimiento preventivo de extintor">
     </div>
     <div class="service-card">
       <i class="fas fa-water"></i>
       <h3>Prueba Hidráulica</h3>
-      <p>Según normativa</p>
-      <img src="https://i.ytimg.com/vi/IsTFIhAczGw/maxresdefault.jpg" alt="Prueba hidrostática de extintor">
+      <p>Según normativa vigente</p>
+      <img src="https://resources.impactfireservices.com/hubfs/Blog%20Images/Blog_hydrostatic-testing.jpg" alt="Prueba hidrostática profesional en extintor">
     </div>
     <div class="service-card">
       <i class="fas fa-certificate"></i>
       <h3>Certificación</h3>
-      <p>Sellado, etiquetado y certificación</p>
+      <p>Sellado, etiquetado y certificado</p>
+      <img src="https://cdn.shopify.com/s/files/1/0403/8760/8730/files/Fire_Extinguisher_Tag_1024x1024.webp?v=1731676297" alt="Etiqueta de certificación en extintor">
     </div>
     <div class="service-card">
       <i class="fas fa-shield-alt"></i>
-      <h3>Asesoría en Seguridad</h3>
-      <p>Básica contra incendios</p>
+      <h3>Asesoría</h3>
+      <p>Básica en seguridad contra incendios</p>
     </div>
   </div>
-  <p style="text-align:center; margin-top:40px;">Todos los servicios conforme a NTC 2885 y NFPA 10.</p>
+  <p style="text-align:center; margin-top:40px; font-weight:bold;">Todo conforme a NTC 2885 y NFPA 10</p>
 </section>
 
 <section>
-  <h2>Transparencia y Cumplimiento</h2>
-  <img src="https://abastecedoracolombianadeextintores.com/assets/mantenimiento-de-extintores_mincore.jpg" alt="Mantenimiento profesional de extintores en Bogotá">
-  <p>Negocio real con servicios físicos. No solicitamos pagos engañosos ni certificaciones falsas.</p>
-  <p>Recarga solo después de inspección técnica.</p>
+  <h2>Transparencia</h2>
+  <p>Somos un negocio real con servicios físicos. Solo recargamos tras inspección técnica. No pedimos pagos anticipados engañosos.</p>
 </section>
 
 <section class="contact">
   <h2>Contacto</h2>
   <div class="contact-box">
-    <img src="https://thumbs.dreamstime.com/b/conjunto-de-iconos-contacto-tel%C3%A9fono-ubicaci%C3%B3n-correo-electr%C3%B3nico-sitio-web-icono-establecido-en-c%C3%ADrculos-m%C3%B3vil-retro-y-163929146.jpg" alt="Iconos de contacto: teléfono, WhatsApp y email">
     <p><strong>Nombre comercial:</strong> ExtinSafe Bogotá</p>
     <p><strong>Responsable:</strong> [[Nombre del responsable o empresa]]</p>
     <p><strong>Ciudad:</strong> Bogotá, Colombia</p>
     <p><strong>Teléfono / WhatsApp:</strong> [[Tu número real]]</p>
-    <p><strong>Correo electrónico:</strong> [[Tu correo real]]</p>
-    <p><strong>Horario:</strong> Lunes a viernes, 8:00 a.m. – 6:00 p.m.</p>
-    
+    <p><strong>Email:</strong> [[Tu correo real]]</p>
+    <p><strong>Horario:</strong> Lunes a viernes 8:00 a.m. - 6:00 p.m.</p>
+
     <form>
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="tel" placeholder="Tu teléfono" required>
-      <input type="email" placeholder="Tu correo" required>
-      <textarea placeholder="Mensaje o solicitud de cotización" rows="5" required></textarea>
-      <button type="submit">Enviar Mensaje</button>
+      <input type="text" placeholder="Nombre" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje o cotización" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </div>
 </section>
 
-<section>
-  <h2>Política de Privacidad y Términos</h2>
-  <p>Recopilamos solo datos básicos para contacto. No compartimos información con terceros.</p>
-  <p>El uso del sitio implica aceptación de términos informativos.</p>
-</section>
-
 <footer>
-  <p>© 2025 ExtinSafe Bogotá – Servicio de recarga y mantenimiento de extintores</p>
-  <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a> | <a href="#contact">Contacto</a></p>
+  <p>© 2025 ExtinSafe Bogotá – Todos los derechos reservados</p>
+  <p><a href="#">Privacidad</a> | <a href="#">Términos</a> | <a href="#contact">Contacto</a></p>
 </footer>
+
+<a href="https://wa.me/[[Tu número real sin + ni espacios]]" class="whatsapp-fixed">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
