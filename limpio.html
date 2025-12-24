@@ -1,128 +1,172 @@
-<!DOCTYPE html>
-<html lang="es">
+!DOCTYPE html>
+<html lang="es-CO">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Extinpro - Servicio profesional de recarga, mantenimiento y venta de extintores a domicilio en Floridablanca, Santander. Cumplimos normas NTC y NFPA."/>
-  <title>BLACKFIRE | Recarga y Mantenimiento de Extintores en Floridablanca</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blackfire Bogotá | Recarga y Mantenimiento de Extintores</title>
+  <meta name="description" content="Servicio profesional de recarga, inspección y mantenimiento de extintores en Bogotá. Cumplimos normativa colombiana. Atención a empresas y hogares.">
+  <meta name="robots" content="index, follow">
+
   <style>
-    :root{
-      --primary: #ff0000; /* Rojo intenso para acentos */
-      --secondary: #cc0000;
-      --bg-dark: #0a0a0a;
-      --text-light: #f0f0f0;
-      --card-bg: #1e1e1e;
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
     }
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:'Roboto',sans-serif;color:var(--text-light);background:var(--bg-dark);line-height:1.6;}
-    header{
-      background:#000;color:var(--text-light);padding:20px 5%;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;z-index:1000;box-shadow:0 4px 20px rgba(255,0,0,0.3);border-bottom:2px solid var(--primary);
+    header {
+      background: #b11226;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
     }
-    .logo{font-family:'Montserrat',sans-serif;font-size:2.5rem;font-weight:800;color:var(--primary);}
-    nav a{color:var(--text-light);text-decoration:none;margin:0 15px;font-weight:bold;transition:0.3s;}
-    nav a:hover{color:var(--primary);}
-    .whatsapp-fixed{
-      position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;box-shadow:0 0 20px rgba(37,211,102,0.8);z-index:999;
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
     }
-    .hero{
-      background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://grupocasalima.com/wp-content/uploads/2023/08/Venta-y-Recarga-de-Extintores.webp');background-size:cover;background-position:center;
-      min-height:100vh;display:flex;align-items:center;text-align:center;padding:120px 20px 80px;
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
     }
-    .hero h1{font-size:3.5rem;margin-bottom:20px;color:var(--primary);text-shadow:0 0 10px var(--primary);}
-    .hero p{font-size:1.5rem;max-width:800px;margin:0 auto 40px;}
-    .btn{
-      background:var(--primary);color:#fff;padding:15px 40px;font-size:1.2rem;border-radius:5px;text-decoration:none;font-weight:bold;transition:0.3s;border:2px solid var(--primary);
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
-    .btn:hover{background:transparent;color:var(--primary);box-shadow:0 0 20px var(--primary);}
-    section{padding:80px 5%;text-align:center;}
-    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:40px;}
-    .service-card{background:var(--card-bg);padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(255,0,0,0.2);transition:0.3s;}
-    .service-card:hover{transform:translateY(-10px);box-shadow:0 0 30px rgba(255,0,0,0.4);}
-    .service-card img{width:100%;border-radius:10px;margin-bottom:20px;opacity:0.9;}
-    .about{background:var(--card-bg);padding:60px;border-radius:15px;max-width:900px;margin:40px auto;}
-    footer{background:#000;color:#888;padding:40px 5%;text-align:center;border-top:1px solid #333;}
-    footer a{color:var(--primary);margin:0 10px;}
-    @media(max-width:768px){
-      header{flex-direction:column;}
-      nav{margin-top:20px;}
-      nav a{display:block;margin:10px 0;}
-      .hero h1{font-size:2.8rem;}
+    h2 {
+      color: #b11226;
+      margin-bottom: 15px;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-left: 5px solid #b11226;
+    }
+    .contact-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 5px;
+    }
+    footer {
+      background: #1f1f1f;
+      color: #ccc;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
-  <a href="https://wa.me/573189411374" class="whatsapp-fixed" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+<header>
+  <h1>blackfire Bogotá</h1>
+  <p>Recarga, inspección y mantenimiento profesional de extintores contra incendio</p>
+</header>
 
-  <header>
-    <div class="logo">EXTINPRO</div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+<section>
+  <h2>¿Quiénes Somos?</h2>
+  <p>
+    <strong>blackfire Bogotá</strong> es un servicio técnico especializado en la recarga,
+    inspección y mantenimiento de extintores contra incendio, con atención en
+    <strong>Bogotá y alrededores</strong>.
+  </p>
+  <p>
+    Nuestro objetivo es ayudar a empresas, comercios y hogares a cumplir con la
+    normativa vigente en Colombia, brindando un servicio responsable, transparente
+    y confiable.
+  </p>
+</section>
 
-  <section class="hero" id="inicio">
-    <div>
-      <h1>Recarga y Mantenimiento de Extintores a Domicilio en Floridablanca</h1>
-      <p>Servicio profesional, rápido y certificado. Protege tu hogar, empresa o vehículo con extintores en perfecto estado según normas NTC colombianas y NFPA.</p>
-      <a href="https://wa.me/573189411374" class="btn">Cotiza por WhatsApp ahora</a>
-    </div>
-  </section>
+<section class="services">
+  <h2>Nuestros Servicios</h2>
+  <ul>
+    <li>Recarga de extintores ABC, CO₂ y PQS</li>
+    <li>Inspección técnica y mantenimiento preventivo</li>
+    <li>Prueba hidráulica según normativa</li>
+    <li>Sellado, etiquetado y certificación de servicio</li>
+    <li>Asesoría básica en seguridad contra incendios</li>
+  </ul>
+  <p>
+    Todos los servicios se realizan conforme a la normativa técnica aplicable en Colombia,
+    incluyendo estándares como <strong>NTC 2885</strong> y lineamientos de <strong>NFPA 10</strong>.
+  </p>
+</section>
 
-  <section id="servicios">
-    <h2 style="color:var(--primary);margin-bottom:20px;">Nuestros Servicios</h2>
-    <p>Ofrecemos soluciones completas en seguridad contra incendios en Floridablanca y zona metropolitana de Bucaramanga.</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="https://grupocasalima.com/wp-content/uploads/2023/08/Venta-y-Recarga-de-Extintores.webp" alt="Técnico recargando extintor a domicilio">
-        <h3 style="color:var(--primary);">Recarga de Extintores</h3>
-        <p>Recarga de todo tipo: polvo químico seco (PQS), CO2, agua, espuma. Servicio anual obligatorio.</p>
-      </div>
-      <div class="service-card">
-        <img src="https://profuego.es/wp-content/uploads/2023/03/como-hacer-el-mantenimiento-de-mi-extintor-en-empresa-o-en-hogar-grupo-profuego.png" alt="Mantenimiento e inspección de extintores">
-        <h3 style="color:var(--primary);">Mantenimiento e Inspección</h3>
-        <p>Revisión, prueba hidrostática (cada 5-12 años) y certificación según norma NTC 2885.</p>
-      </div>
-      <div class="service-card">
-        <img src="https://extintorespropama.com/wp-content/uploads/2018/05/EXTINTORES_PQS_001.jpg" alt="Venta y entrega de extintores nuevos">
-        <h3 style="color:var(--primary);">Venta y Entrega a Domicilio</h3>
-        <p>Extintores nuevos para hogares, empresas y vehículos. Entrega gratis en Floridablanca.</p>
-      </div>
-    </div>
-  </section>
+<section>
+  <h2>Transparencia y Cumplimiento</h2>
+  <p>
+    Este es un negocio real, con prestación de servicios físicos. No solicitamos pagos
+    engañosos ni ofrecemos certificaciones oficiales que no correspondan.
+  </p>
+  <p>
+    La recarga y mantenimiento se realizan únicamente después de la inspección del
+    extintor y de acuerdo con su estado técnico.
+  </p>
+</section>
 
-  <section id="nosotros">
-    <div class="about">
-      <h2 style="color:var(--primary);">¿Quiénes Somos?</h2>
-      <p><strong>Extinpro</strong> es una empresa especializada en recarga, mantenimiento y venta de extintores en Floridablanca, Santander. Contamos con técnicos certificados y cumplimos todas las normas de seguridad colombianas para garantizar tu protección.</p>
-      <p>Dirección: [Tu dirección real en Floridablanca, ej: Calle 10 # 5-20, Barrio X]<br>
-      Teléfono: +57 318 941 1374<br>
-      Email: info@extinpro.com<br>
-      NIT: [Tu NIT real]</p>
-      <p>¡Tu seguridad es nuestra prioridad!</p>
-    </div>
-  </section>
+<section>
+  <h2>Contacto</h2>
+  <div class="contact-box">
+    <p><strong>Nombre comercial:</strong> blackfire</p>
+    <p><strong>Responsable:</strong> [[blackfire]]</p>
+    <p><strong>Ciudad:</strong> Bogotá, Colombia</p>
+    <p><strong>Teléfono / WhatsApp:</strong> [[3243773129]]</p>
+    <p><strong>Correo electrónico:</strong> [[zerofuego@gmail.com]]</p>
+    <p><strong>Horario de atención:</strong> Lunes a viernes, 8:00 a.m. – 6:00 p.m.</p>
+  </div>
+</section>
 
-  <section id="contacto">
-    <h2 style="color:var(--primary);">Contáctanos</h2>
-   
-    <p>Agenda tu servicio hoy mismo. Respondemos en minutos.</p>
-  
-    
-    <a href="https://wa.me/573189411374" class="btn">WhatsApp +57 318 941 1374</a>
-  </section>
+<section>
+  <h2>Política de Privacidad</h2>
+  <p>
+    Este sitio web recopila únicamente datos básicos como nombre, teléfono y correo
+    electrónico cuando el usuario decide contactarnos voluntariamente.
+  </p>
+  <p>
+    La información suministrada se utiliza exclusivamente para responder solicitudes,
+    brindar cotizaciones o coordinar la prestación del servicio.
+  </p>
+  <p>
+    No compartimos datos personales con terceros ni realizamos uso indebido de la
+    información. El usuario puede solicitar la eliminación de sus datos en cualquier momento.
+  </p>
+</section>
 
-  <footer>
-    <p><a href="https://wa.me/573189411374">WhatsApp: +57 318 941 1374</a> | Floridablanca, Santander</p>
-    <p>© 2025 Extinpro - Recarga y Mantenimiento de Extintores. Todos los derechos reservados.</p>
-  </footer>
+<section>
+  <h2>Términos y Condiciones</h2>
+  <p>
+    El uso de este sitio web implica la aceptación de estos términos. La información
+    publicada tiene fines informativos y no constituye una obligación contractual
+    hasta que el servicio sea acordado formalmente.
+  </p>
+  <p>
+    ExtinSafe Bogotá se reserva el derecho de modificar contenidos del sitio sin previo aviso.
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 ExtinSafe Bogotá – Servicio de recarga y mantenimiento de extintores</p>
+  <p>
+    <a href="#">Política de Privacidad</a> |
+    <a href="#">Términos y Condiciones</a> |
+    <a href="#">Contacto</a>
+  </p>
+</footer>
 
 </body>
 </html>
